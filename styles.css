@@ -1,9 +1,9 @@
 /* Custom properties/variables  */
 :root {
-  --main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841;
+  --color-white: #f0f0f0;
+  --color-green: #0e9737;
+  --color-blue: #45567d;
+  --color-dark: #0f0625;
 }
 
 /* Base reset */
@@ -73,7 +73,7 @@ body {
   font-size: 1.8rem; /* 18px */
   font-weight: 400;
   line-height: 1.4;
-  color: var(--main-white);
+  color: var(--color-white);
 }
 
 h1,
@@ -97,7 +97,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--main-white);
+  color: var(--color-white);
 }
 
 img {
@@ -114,7 +114,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);
+  background: var(--color-green);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -141,7 +141,7 @@ img {
 }
 
 .nav-list a:hover {
-  background: var(--main-blue);
+  background: var(--color-blue);
 }
 
 /* Welcome section */
@@ -161,7 +161,7 @@ img {
   font-size: 3rem;
   font-weight: 200;
   font-style: italic;
-  color: var(--main-red);
+  color: var(--color-green);
 }
 
 /* Projects section */
@@ -169,13 +169,13 @@ img {
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-blue);
+  background: var(--color-blue);
 }
 
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
+  border-bottom: 0.2rem solid var(--color-white);
 }
 
 @media (max-width: 28.75em) {
@@ -206,13 +206,13 @@ img {
 }
 
 .project {
-  background: var(--main-gray);
+  background: var(--color-dark);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
 }
 
 .code {
-  color: var(--main-gray);
+  color: var(--color-dark);
   transition: color 0.3s ease-out;
 }
 
@@ -239,12 +239,12 @@ img {
 
 .btn-show-all {
   font-size: 2rem;
-  background: var(--main-gray);
+  background: var(--color-dark);
   transition: background 0.3s ease-out;
 }
 
 .btn-show-all:hover {
-  background: var(--main-red);
+  background: var(--color-green);
 }
 
 .btn-show-all:hover > i {
@@ -268,7 +268,7 @@ img {
   width: 100%;
   height: 80vh;
   padding: 0 2rem;
-  background: var(--main-gray);
+  background: var(--color-dark);
 }
 
 .contact-section-header > h2 {
@@ -311,8 +311,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
-  background: var(--main-gray);
-  border-top: 4px solid var(--main-red);
+  background: var(--color-dark);
+  border-top: 4px solid var(--color-green);
 }
 
 footer .copyright {
