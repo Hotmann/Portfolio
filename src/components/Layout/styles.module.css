@@ -1,0 +1,8 @@
+.layout {
+  height: 100%;
+}
+
+.content {
+  height: 100vh;
+  padding-top: 56px;
+}

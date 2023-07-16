@@ -1,0 +1,48 @@
+.socialIcons {
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  left: 50px;
+  position: absolute;
+  transform: translate(-300px, 0);
+}
+
+.link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #ffffff5c;
+  width: 300px;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s ease-in-out;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.link .icon {
+  margin-left: 10px;
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: #fff;
+}
+
+.link:hover {
+  transform: translate(110px, 0);
+  background-color: #40a4c8;
+  color: #000;
+}
+
+.link:hover .icon {
+  color: #fff;
+  background: #0000005c;
+  transform: rotate(360deg);
+  transition: all 1s;
+}

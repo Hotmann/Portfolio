@@ -1,0 +1,112 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.note {
+  color: #a9a9af76;
+  font-size: 14px;
+}
+
+.heading {
+  color: #40a4c8;
+  font-size: 2.1rem;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 1320px;
+  width: 100%;
+  margin: 60px auto;
+}
+
+.icon {
+  width: 40px;
+}
+
+.details,
+.contactForm {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.details {
+  list-style: none;
+  color: #40a4c8;
+}
+
+.title {
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.formLabel {
+  margin-bottom: 4px;
+}
+
+.text {
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.value {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a.value {
+  color: gray;
+}
+
+a.value:hover {
+  color: #40a4c8;
+}
+
+.formInput {
+  background-color: #161616;
+  border: none;
+  border-bottom: 1px solid #808080;
+  border-radius: 1px;
+  color: #808080;
+  font-size: 15px;
+  margin-bottom: 20px;
+  outline: transparent;
+  padding: 10px;
+  width: 100%;
+}
+
+.formInput:focus {
+  border-bottom: 1px solid #40a4c8;
+}
+textarea.formInput {
+  resize: vertical;
+  height: 150px;
+}
+
+.btn {
+  border: none;
+  background: none;
+  color: #ffffff;
+  cursor: pointer;
+  width: 130px;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #40a4c8, #285a9b);
+}

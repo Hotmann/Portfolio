@@ -1,0 +1,31 @@
+.header {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #171923;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 90;
+}
+
+.close {
+  cursor: pointer;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.close,
+.open {
+  height: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo {
+  font-size: 35px;
+  color: #40a4c8;
+  text-transform: uppercase;
+}
