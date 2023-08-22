@@ -7,6 +7,7 @@ import Image from "../../assets/images/my_img.jpeg";
 import { personalDetails } from "../../assets/myData/myData";
 
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 const About = () => {
   return (
@@ -52,6 +53,7 @@ const About = () => {
           </div>
         </div>
       </motion.section>
+      <Footer />
     </Layout>
   );
 };

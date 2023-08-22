@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  font-size: 1.5rem;
+}
+
+.link {
+  display: inline-block;
+  margin: 0.7rem;
+  position: relative;
+  font-size: 3rem;
+  transform: scale(1);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background: linear-gradient(45deg, #40a4c8, #307dcf);
+  transition: all 265ms ease-out;
+}
+
+.link:hover {
+  background: none;
+  transition: all 265ms ease-in;
+}
+
+.link .icon {
+  color: #fff;
+  width: 3rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transition: all 265ms ease-out;
+}
+
+.link:hover .icon {
+  transform: scale(1.5);
+  color: #40a4c8;
+  background: -webkit-linear-gradient(45deg, #40a4c8, #307dcf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}

@@ -11,6 +11,7 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import ContactForm from "../../components/ContactForm/ContactForm";
+import Footer from "../../components/Footer/Footer";
 
 const Contact = () => {
   return (
@@ -69,6 +70,7 @@ const Contact = () => {
           <ContactForm />
         </div>
       </motion.section>
+      <Footer />
     </Layout>
   );
 };

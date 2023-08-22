@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Layout from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
+import Footer from "../../components/Footer/Footer";
 
 const Projects = () => {
   return (
@@ -14,6 +15,7 @@ const Projects = () => {
       >
         Coming Soon...
       </motion.section>
+      <Footer />
     </Layout>
   );
 };
