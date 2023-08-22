@@ -26,7 +26,7 @@ const SocialHandles = () => {
         href="https://www.linkedin.com/in/uthman-ogunbowale/"
         title="Uthmans' Linkedin Profile"
       >
-        GitHub
+        Linkedin
         <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />
       </a>
 

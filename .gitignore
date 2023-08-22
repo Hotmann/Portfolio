@@ -11,6 +11,11 @@
 # production
 /build
 
+# dependency lock files
+yarn.lock
+package-lock.json
+
+
 # misc
 .DS_Store
 .env.local

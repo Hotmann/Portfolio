@@ -1,5 +1,5 @@
 .header {
-  height: 56px;
+  height: 6.5rem;
   width: 100%;
   position: fixed;
   top: 0;
@@ -8,24 +8,61 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 2rem;
   z-index: 90;
 }
 
-.close {
+.menubar {
+  width: 6.2rem;
   cursor: pointer;
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
 }
 
 .close,
 .open {
-  height: 3rem;
+  width: 100%;
   transition: all 0.5s ease-in-out;
 }
 
+.open {
+  transform: rotate(180deg);
+}
+
 .logo {
-  font-size: 35px;
+  cursor: pointer;
+  font-size: 3.5rem;
   color: #40a4c8;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 0 1rem;
+  }
+  .logo {
+    font-size: 3.2rem;
+  }
+  .menubar {
+    width: 5.5rem;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+  .menubar {
+    width: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .header {
+    height: 7rem;
+  }
+  .logo {
+    font-size: 4rem;
+  }
+  .menubar {
+    width: 6.6rem;
+  }
 }

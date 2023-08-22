@@ -1,10 +1,10 @@
 .socialIcons {
-  bottom: 20px;
+  bottom: 3.5rem;
   display: flex;
   flex-direction: column;
-  left: 50px;
+  left: 5rem;
   position: absolute;
-  transform: translate(-300px, 0);
+  transform: translate(-30rem, 0);
 }
 
 .link {
@@ -12,37 +12,70 @@
   justify-content: flex-end;
   align-items: center;
   background: #ffffff5c;
-  width: 300px;
-  margin: 5px;
-  padding: 10px;
+  width: 30rem;
+  margin: 0.5rem;
+  padding: 1rem;
   text-decoration: none;
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 3rem 3rem 0;
   transition: all 1s ease-in-out;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #fff;
 }
 
 .link .icon {
-  margin-left: 10px;
+  margin-left: 1rem;
+  background-color: #ffffff;
   color: #000;
-  background: #fff;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  background: #fff;
+  width: 2rem;
+  height: 2rem;
 }
 
 .link:hover {
-  transform: translate(110px, 0);
+  transform: translate(11rem, 0);
   background-color: #40a4c8;
   color: #000;
 }
 
 .link:hover .icon {
-  color: #fff;
-  background: #0000005c;
+  color: #ffffff;
+  background-color: #000;
   transform: rotate(360deg);
   transition: all 1s;
+}
+@media only screen and (max-width: 1200px) {
+  .socialIcons {
+    bottom: 3rem;
+  }
+
+  .link {
+    padding: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .link {
+    font-size: 2.1rem;
+  }
+
+  .link:hover {
+    transform: translate(10.5rem, 0);
+  }
+
+  .link .icon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .link .icon {
+    margin-left: 0.6rem;
+    padding: 1.1rem;
+  }
+
+  .link:hover {
+    transform: translate(9.8rem, 0);
+  }
 }

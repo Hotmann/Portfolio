@@ -20,7 +20,7 @@ const Header = () => {
     <header className={styles.header}>
       <h1 className={styles.logo}>Hotmann</h1>
 
-      <div onClick={handleNav}>
+      <div className={styles.menubar} onClick={handleNav}>
         {showNav ? (
           <img className={styles.close} src={close} alt="Close" />
         ) : (

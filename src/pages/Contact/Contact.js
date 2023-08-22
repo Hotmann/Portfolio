@@ -1,122 +1,74 @@
-import React, { useState } from "react";
-import styles from "./styles.module.css";
+import React from "react";
+import { motion } from "framer-motion";
 import Layout from "../../components/Layout/Layout";
+import styles from "./styles.module.css";
+
+import { personalDetails } from "../../assets/myData/myData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import ContactForm from "../../components/ContactForm/ContactForm";
 
-const Contact = (props) => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [success, setSuccess] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+const Contact = () => {
   return (
     <Layout>
-      <section id="contact" className={styles.contact}>
-        <p class={styles.note}>Get in touch</p>
-        <h3 class={styles.heading}>Contact</h3>
+      <motion.section
+        className={styles.contactPage}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      >
+        <div className={styles.pageTitle}>
+          <p class={styles.subtext}>Get in touch</p>
+          <h1 class={styles.heading}>Contact</h1>
+        </div>
         <div className={styles.main}>
-          <ul className={styles.details}>
+          <motion.ul
+            className={styles.details}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
             <h4 className={styles.title}>Contact Information</h4>
             <p className={styles.text}>
               Unlocking possibilities, let's collaborate and create greatness!
             </p>
-            <li className={styles.info}>
+            <motion.li
+              className={styles.info}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <FontAwesomeIcon className={styles.icon} icon={faLocationDot} />
-              <span className={styles.value}>Lagos, Nigeria</span>
-            </li>
-            <li className={styles.info}>
+              <span className={styles.value}>{personalDetails.location}</span>
+            </motion.li>
+            <motion.li
+              className={styles.info}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <FontAwesomeIcon className={styles.icon} icon={faPhone} />
               <a className={styles.value} href="tel:+2349074861924">
-                +234 9074 861 924
+                {personalDetails.phone}
               </a>
-            </li>
-            <li className={styles.info}>
+            </motion.li>
+            <motion.li
+              className={styles.info}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <FontAwesomeIcon className={styles.icon} icon={faEnvelope} />
               <a className={styles.value} href="mailto:hotmann442@gmail.com">
-                hotmann442@gmail.com
+                {personalDetails.email}
               </a>
-            </li>
-          </ul>
-          <form
-            netlify
-            name="contact"
-            className={styles.contactForm}
-            onSubmit={handleSubmit}
-          >
-            <h4 className={styles.title}>Let's Talk</h4>
+            </motion.li>
+          </motion.ul>
 
-            <div className={styles.formGroup}>
-              <label htmlFor="name" className={styles.formLabel}>
-                Name
-              </label>
-
-              <input
-                type="text"
-                className={styles.formInput}
-                onChange={handleChange}
-                value={formData.name}
-                id="name"
-                name="name"
-                placeholder="Your Name?"
-                required
-              />
-            </div>
-
-            <div className={styles.formGroup}>
-              <label htmlFor="email" className={styles.formLabel}>
-                Email
-              </label>
-
-              <input
-                type="email"
-                className={styles.formInput}
-                onChange={handleChange}
-                value={formData.email}
-                id="contactEmail"
-                name="email"
-                placeholder="Your Email?"
-                required
-              />
-            </div>
-
-            <div className={styles.formGroup}>
-              <label htmlFor="message" className={styles.formLabel}>
-                Message
-              </label>
-              <textarea
-                className={styles.formInput}
-                onChange={handleChange}
-                value={formData.message}
-                name="message"
-                id="message"
-                placeholder="Leave your Message"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" className={styles.btn}>
-              {success ? "Message Delivered" : "Send Message"}
-            </button>
-          </form>
+          <ContactForm />
         </div>
-      </section>
+      </motion.section>
     </Layout>
   );
 };

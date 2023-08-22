@@ -11,15 +11,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/contact" element=<Contact /> />
-      {/* <Route
-        path="/contact"
-        element={
-          <Contact name={personalDetails.name} location={personalDetails.location} email={personalDetails.email} />
-        }
-      /> */}
-
-      {/* <Route path="/projects" element=<Projects /> /> */}
-      {/* <Route path="/about" element=<About /> />
+      <Route path="/about" element=<About /> />
+      <Route path="/projects" element=<Projects /> />
+      {/* 
       <Route path="/skills" element=<Skills /> />
       <Route path="/" element=<Testimonials /> />*/}
     </Routes>
