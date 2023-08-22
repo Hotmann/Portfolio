@@ -13,7 +13,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## Demo
 
-You can view the live version of my portfolio [here](your-live-portfolio-link).
+You can view the live version of my portfolio [here](https://ogunbowaleuthman.netlify.app).
 
 ## Features
 
