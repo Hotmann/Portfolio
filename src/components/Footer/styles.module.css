@@ -6,7 +6,6 @@
   padding: 5rem;
   font-size: 1.5rem;
 }
-
 .link {
   display: inline-block;
   margin: 0.7rem;
@@ -19,12 +18,10 @@
   background: linear-gradient(45deg, #40a4c8, #307dcf);
   transition: all 265ms ease-out;
 }
-
 .link:hover {
   background: none;
   transition: all 265ms ease-in;
 }
-
 .link .icon {
   color: #fff;
   width: 3rem;
@@ -33,7 +30,6 @@
   left: 1rem;
   transition: all 265ms ease-out;
 }
-
 .link:hover .icon {
   transform: scale(1.5);
   color: #40a4c8;
@@ -41,4 +37,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
+}
+.copy {
+  text-align: center;
 }
