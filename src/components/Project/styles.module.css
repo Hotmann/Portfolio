@@ -1,0 +1,114 @@
+.projectContainer {
+  background-color: #ffffff;
+  border: 5px solid #e5e5e5;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18rem;
+  border-radius: 0.8rem 0.8rem 0 0;
+  overflow: hidden;
+  box-shadow: 0rem 0.4rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.projectInfo {
+  padding: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 0 0 0.8rem 0.8rem;
+  box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.projectContainer:hover .img {
+  opacity: 0.8;
+}
+
+.technologies,
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.title,
+.techIcon {
+  font-size: 2.6rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #40a4c8;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+  font-size: 2rem;
+}
+
+.link:hover {
+  color: #1a7f9c;
+}
+
+.link svg {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .projectContainer {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .imgContainer {
+    height: 22rem;
+  }
+  .technologies,
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 1.7rem;
+    margin-top: 0.7rem;
+  }
+  .title,
+  .techIcon {
+    font-size: 3rem;
+  }
+  .link {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .imgContainer {
+    height: 20rem;
+  }
+  .technologies,
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 1.7rem;
+    margin-top: 0.7rem;
+  }
+  .title,
+  .techIcon {
+    font-size: 2.8rem;
+  }
+  .link {
+    font-size: 2.1rem;
+  }
+}

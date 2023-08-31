@@ -2,8 +2,74 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
+  padding: 6rem 0 3rem;
   font-size: 1.7rem;
-  font-size: 4rem;
   color: #40a4c8;
+}
+
+.pageTitle {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.subtext {
+  color: #808080;
+  font-size: 1.65rem;
+  opacity: 0.8;
+}
+.heading {
+  color: #40a4c8;
+  font-size: 3.2rem;
+  margin-top: 0.5rem;
+}
+
+.projectsContainer {
+  width: 90.5%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+  max-width: 1330px;
+  padding: 0 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .projectsContainer {
+    max-width: 955px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .projectsContainer {
+    width: 93%;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projectsContainer {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    padding: 0 2rem;
+    max-width: 385px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .contact {
+    font-size: 1.75rem;
+  }
+  .subtext {
+    font-size: 1.8rem;
+  }
+  .heading {
+    font-size: 3.3rem;
+  }
+  .projectsContainer {
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    padding: 0 2rem;
+    max-width: 2000px;
+  }
 }
