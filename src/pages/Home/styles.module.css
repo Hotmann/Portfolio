@@ -27,6 +27,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .main {
+    margin: -3rem 0;
+  }
+
   .text {
     padding-bottom: 2rem;
     font-size: 4.5rem;
