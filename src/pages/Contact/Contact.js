@@ -23,8 +23,8 @@ const Contact = () => {
         transition={{ duration: 0.6, delay: 0.3 }}
       >
         <div className={styles.pageTitle}>
-          <p class={styles.subtext}>Get in touch</p>
-          <h1 class={styles.heading}>Contact</h1>
+          <p className={styles.subtext}>Get in touch</p>
+          <h1 className={styles.heading}>Contact</h1>
         </div>
         <div className={styles.main}>
           <motion.ul
