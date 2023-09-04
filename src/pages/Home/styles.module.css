@@ -3,26 +3,47 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
+  text-align: center;
+  color: #ffffff;
+  overflow: auto;
 }
 
 .text {
   font-weight: 700;
   padding-bottom: 2rem;
-  font-size: 5.5rem;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 5.8rem;
 }
 
 .typewriter {
-  display: flex;
-  gap: 8px;
+  font-size: 2.8rem;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.typewriter span {
   color: #40a4c8;
-  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 @media only screen and (max-width: 900px) {
   .text {
     padding-bottom: 1.7rem;
-    font-size: 5.2rem;
+    font-size: 5.5rem;
+  }
+
+  .typewriter {
+    font-size: 2.5rem;
+    max-width: 80%;
   }
 }
 
@@ -33,10 +54,18 @@
 
   .text {
     padding-bottom: 2rem;
-    font-size: 4.5rem;
+    font-size: 4.2rem;
+    line-height: 5.3rem;
   }
 
   .typewriter {
     font-size: 2.5rem;
+    max-width: 83%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .links {
+    flex-direction: column;
   }
 }
