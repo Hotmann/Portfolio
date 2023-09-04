@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Layout from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
 
-import { personalDetails } from "../../assets/myData/myData";
+import { personalDetails } from "../../data/myData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,

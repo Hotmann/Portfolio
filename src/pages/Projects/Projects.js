@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Layout from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
 import Footer from "../../components/Footer/Footer";
-import ProjectsData from "./projectData";
+import ProjectsData from "../../data/projectData";
 import Project from "../../components/Project/Project";
 
 const Projects = () => {
