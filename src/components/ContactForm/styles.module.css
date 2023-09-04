@@ -54,13 +54,15 @@ textarea.formInput {
   border-bottom: 3px solid #40a4c8;
 }
 
-.formInput:focus:invalid {
-  border-bottom: 3px solid rgb(255, 96, 48);
+.errorInput {
+  border-bottom: 3px solid #ff6348;
 }
 
-/* .formInput::-webkit-input-placeholder {
-  color: blue;
-} */
+.error {
+  color: #ff6348;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
 .btn {
   border: none;
   background: none;
