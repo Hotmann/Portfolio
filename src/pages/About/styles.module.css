@@ -54,26 +54,10 @@
 
 .links {
   display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
   gap: 1.5rem;
   margin-top: 1.5rem;
-}
-
-.link {
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  background-color: #40a4c8;
-  color: #ffffff;
-  padding: 0.5rem 1.5rem;
-  font-weight: 500;
-  transition: transform 0.2s ease-in-out;
-}
-
-.link:hover {
-  border-radius: 10px;
-  font-weight: 600;
-  transform: scale(1.1);
-  opacity: 0.5;
 }
 
 .container {
@@ -122,6 +106,12 @@
   }
   .name {
     font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .links {
+    justify-content: center;
   }
 }
 

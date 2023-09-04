@@ -4,10 +4,10 @@ import Layout from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
 
 import Image from "../../assets/images/my_img.jpeg";
-import { personalDetails } from "../../assets/myData/myData";
+import { personalDetails } from "../../data/myData";
 
-import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import Button from "../../components/Button/Button";
 
 const About = () => {
   return (
@@ -37,15 +37,8 @@ const About = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <Link
-                className={styles.link}
-                to={`mailto:${personalDetails.email}`}
-              >
-                Hire Me
-              </Link>
-              <Link className={styles.link} to="/">
-                Resume
-              </Link>
+              <Button to={`mailto:${personalDetails.email}`}>Hire Me</Button>
+              <Button to="/">Resume</Button>
             </motion.div>
           </div>
           <div className={styles.container}>
