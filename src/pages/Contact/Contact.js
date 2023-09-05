@@ -4,12 +4,7 @@ import Layout from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
 
 import { personalDetails } from "../../data/myData";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faLocationDot,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/Footer/Footer";
 
@@ -42,7 +37,7 @@ const Contact = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <FontAwesomeIcon className={styles.icon} icon={faLocationDot} />
+              <FaMapMarkerAlt className={styles.icon} />
               <span className={styles.value}>{personalDetails.location}</span>
             </motion.li>
             <motion.li
@@ -50,7 +45,7 @@ const Contact = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <FontAwesomeIcon className={styles.icon} icon={faPhone} />
+              <FaPhoneAlt className={styles.icon} />
               <a className={styles.value} href="tel:+2349074861924">
                 {personalDetails.phone}
               </a>
@@ -60,7 +55,7 @@ const Contact = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <FontAwesomeIcon className={styles.icon} icon={faEnvelope} />
+              <FaEnvelope className={styles.icon} />
               <a className={styles.value} href="mailto:hotmann442@gmail.com">
                 {personalDetails.email}
               </a>
