@@ -1,11 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faTwitter,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { FaGithub, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import styles from "./styles.module.css";
 
@@ -18,7 +12,9 @@ const SocialHandles = () => {
         title="Uthmans' GitHub Profile"
       >
         GitHub
-        <FontAwesomeIcon className={styles.icon} icon={faGithub} />
+        <div className={styles.iconContainer}>
+          <FaGithub className={styles.icon} />
+        </div>
       </a>
 
       <a
@@ -27,7 +23,9 @@ const SocialHandles = () => {
         title="Uthmans' Linkedin Profile"
       >
         Linkedin
-        <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />
+        <div className={styles.iconContainer}>
+          <FaLinkedin className={styles.icon} />
+        </div>
       </a>
 
       <a
@@ -36,12 +34,16 @@ const SocialHandles = () => {
         title="Uthmans' Twitter Profile"
       >
         Twitter
-        <FontAwesomeIcon className={styles.icon} icon={faTwitter} />
+        <div className={styles.iconContainer}>
+          <FaTwitter className={styles.icon} />
+        </div>
       </a>
 
       <a className={styles.link} href="https://www.instagram.com/hotmann._">
         Instagram
-        <FontAwesomeIcon className={styles.icon} icon={faInstagram} />
+        <div className={styles.iconContainer}>
+          <FaInstagram className={styles.icon} />
+        </div>
       </a>
     </div>
   );

@@ -1,11 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faTwitter,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { FaGithub, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import styles from "./styles.module.css";
 
@@ -21,7 +15,7 @@ const Footer = () => {
           href="https://github.com/Hotmann"
           title="Uthmans' GitHub Profile"
         >
-          <FontAwesomeIcon className={styles.icon} icon={faGithub} />
+          <FaGithub className={styles.icon} />
         </a>
 
         <a
@@ -29,7 +23,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/uthman-ogunbowale/"
           title="Uthmans' Linkedin Profile"
         >
-          <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />
+          <FaLinkedin className={styles.icon} />
         </a>
 
         <a
@@ -37,11 +31,11 @@ const Footer = () => {
           href="https://twitter.com/_Hotmann"
           title="Uthmans' Twitter Profile"
         >
-          <FontAwesomeIcon className={styles.icon} icon={faTwitter} />
+          <FaTwitter className={styles.icon} />
         </a>
 
         <a className={styles.link} href="https://www.instagram.com/hotmann._">
-          <FontAwesomeIcon className={styles.icon} icon={faInstagram} />
+          <FaInstagram className={styles.icon} />
         </a>
       </div>
       <p className={styles.copy}>

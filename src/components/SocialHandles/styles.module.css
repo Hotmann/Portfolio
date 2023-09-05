@@ -4,7 +4,7 @@
   flex-direction: column;
   left: 5rem;
   position: absolute;
-  transform: translate(-30rem, 0);
+  transform: translate(-29.5rem, 0);
 }
 
 .link {
@@ -19,31 +19,41 @@
   border-radius: 0 3rem 3rem 0;
   transition: all 1s ease-in-out;
   font-size: 2rem;
-  color: #fff;
+  color: #ffffff;
 }
 
-.link .icon {
-  margin-left: 1rem;
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.8rem;
+  margin-left: 0.8rem;
   background-color: #ffffff;
   color: #000;
-  padding: 1rem;
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
+  transition: all 1s;
+}
+
+.icon {
+  font-size: 2.7rem;
+  transition: transform 1s;
 }
 
 .link:hover {
-  transform: translate(11rem, 0);
+  transform: translateX(11rem);
   background-color: #40a4c8;
   color: #000;
 }
 
-.link:hover .icon {
+.link:hover .iconContainer {
   color: #ffffff;
   background-color: #000;
-  transform: rotate(360deg);
-  transition: all 1s;
 }
+
+.link:hover .icon {
+  transform: rotate(360deg);
+}
+
 @media only screen and (max-width: 1200px) {
   .socialIcons {
     bottom: 3rem;
@@ -60,17 +70,16 @@
   }
 
   .link:hover {
-    transform: translate(10.5rem, 0);
+    transform: translate(11.5rem, 0);
   }
 
-  .link .icon {
-    width: 2.2rem;
-    height: 2.2rem;
+  .icon {
+    font-size: 2.4rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .link .icon {
+  .iconContainer {
     margin-left: 0.6rem;
     padding: 1.1rem;
   }
