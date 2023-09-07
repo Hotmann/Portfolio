@@ -63,20 +63,6 @@ textarea.formInput {
   font-size: 1.4rem;
   margin-top: 0.5rem;
 }
-.btn {
-  border: none;
-  background: none;
-  color: #ffffff;
-  cursor: pointer;
-  border-radius: 10px;
-  padding: 15px;
-  font-size: inherit;
-  font-weight: 600;
-  transition: background-image 500s ease-in;
-}
-.btn:hover {
-  background-image: linear-gradient(90deg, #40a4c8, #285a9b);
-}
 
 @media only screen and (max-width: 600px) {
   .contactForm {

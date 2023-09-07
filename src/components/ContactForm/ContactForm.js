@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./styles.module.css";
+import Button from "../Button/Button";
 
 const ContactForm = () => {
   const initialFormData = {
@@ -144,9 +145,7 @@ const ContactForm = () => {
           <span className={styles.error}>{errors.message}</span>
         )}
       </div>
-      <button type="submit" className={styles.btn}>
-        {success ? "Message Delivered" : "Send Message"}
-      </button>
+      <Button>{success ? "Message Delivered" : "Send Message"}</Button>
     </motion.form>
   );
 };
