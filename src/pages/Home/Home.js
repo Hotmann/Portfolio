@@ -55,7 +55,7 @@ const Home = () => {
           transition={{ duration: 0.6, delay: 1 }}
         >
           <Button to="/projects">Projects</Button>
-          <Button to={`mailto:${personalDetails.email}`}>Contact Me</Button>
+          <Button to="/contact">Contact Me</Button>
         </motion.div>
       </motion.div>
       <SocialHandles />
