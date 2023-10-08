@@ -38,7 +38,9 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <Button to={`mailto:${personalDetails.email}`}>Hire Me</Button>
-              <Button to="/">Resume</Button>
+              <Button to={personalDetails.resume} download>
+                Resume
+              </Button>
             </motion.div>
           </div>
           <div className={styles.container}>
