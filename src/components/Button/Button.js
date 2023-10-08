@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 import styles from "./styles.module.css";
 
-const Button = ({ children, to, ...others }) => {
+const Button = ({ children, to, download }) => {
   return (
-    <Link className={styles.link} to={to} {...others}>
+    <a download={download} className={styles.link} href={to}>
       {children}
-    </Link>
+    </a>
   );
 };
 
