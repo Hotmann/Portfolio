@@ -64,6 +64,25 @@ textarea.formInput {
   margin-top: 0.5rem;
 }
 
+.btn {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  background-color: #40a4c8;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  font-size: 1.7rem;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 0.7rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #307dcf;
+  transform: scale(1.05);
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 600px) {
   .contactForm {
     width: 100%;

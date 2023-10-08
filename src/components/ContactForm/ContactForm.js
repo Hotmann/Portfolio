@@ -145,7 +145,9 @@ const ContactForm = () => {
           <span className={styles.error}>{errors.message}</span>
         )}
       </div>
-      <Button>{success ? "Message Delivered" : "Send Message"}</Button>
+      <button className={styles.btn}>
+        {success ? "Message Delivered" : "Send Message"}
+      </button>
     </motion.form>
   );
 };
