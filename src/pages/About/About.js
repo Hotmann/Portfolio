@@ -4,6 +4,7 @@ import Layout from "../../components/Layout/Layout";
 import styles from "./styles.module.css";
 
 import Image from "../../assets/images/my_img.jpeg";
+import resume from "../../assets/resume/Uthman_Ogunbowale_Resume.pdf";
 import { personalDetails } from "../../data/myData";
 
 import Footer from "../../components/Footer/Footer";
@@ -38,7 +39,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <Button to={`mailto:${personalDetails.email}`}>Hire Me</Button>
-              <Button to={personalDetails.resume} download>
+              <Button to={resume} download>
                 Resume
               </Button>
             </motion.div>
