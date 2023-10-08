@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const Button = ({ children, to, download }) => {
   return (
-    <Link className={styles.link} to={to} download={download}>
+    <Link download={download} className={styles.link} to={to}>
       {children}
     </Link>
   );
